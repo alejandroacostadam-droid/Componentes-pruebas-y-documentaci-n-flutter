@@ -7,7 +7,7 @@ class Protagonista {
   final String rol;
   final IconData icono;
   final IconData? iconoInterior; // opcional: icono pequeño dentro del principal
-  final Color colorAcento;
+  final Color colorPersonaje;
   final String etiquetaActiva; // "ACTIVA" / "ACTIVO" según el género
 
   const Protagonista({
@@ -15,28 +15,28 @@ class Protagonista {
     required this.nombre,
     required this.rol,
     required this.icono,
-    required this.colorAcento,
+    required this.colorPersonaje,
     this.iconoInterior,
     this.etiquetaActiva = 'ACTIVA',
   });
 
-  /// Lucía, con el acento magenta del diseño.
+  /// Lucía, con el color magenta del diseño.
   static const lucia = Protagonista(
     id: 'lucia',
     nombre: 'Lucía',
     rol: 'Protagonista',
     icono: Icons.account_box,
-    colorAcento: ColoresGta.neonMagenta,
+    colorPersonaje: ColoresGta.neonMagenta,
   );
 
-  /// Jason, con el acento cyan y el monigote dentro del escudo.
+  /// Jason, con el color cyan y el monigote dentro del escudo.
   static const jason = Protagonista(
     id: 'jason',
     nombre: 'Jason',
     rol: 'Protagonista',
     icono: Icons.shield,
     iconoInterior: Icons.person,
-    colorAcento: ColoresGta.neonCyan,
+    colorPersonaje: ColoresGta.neonCyan,
     etiquetaActiva: 'ACTIVO',
   );
 

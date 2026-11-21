@@ -16,7 +16,7 @@ const _lucia = Protagonista(
   nombre: 'Lucía',
   rol: 'Protagonista',
   icono: Icons.account_box,
-  colorAcento: _magenta,
+  colorPersonaje: _magenta,
 );
 
 const _jason = Protagonista(
@@ -25,7 +25,7 @@ const _jason = Protagonista(
   rol: 'Protagonista',
   icono: Icons.shield,
   iconoInterior: Icons.person,
-  colorAcento: _cyan,
+  colorPersonaje: _cyan,
   etiquetaActiva: 'ACTIVO',
 );
 
@@ -127,10 +127,10 @@ void main() {
   // ---------------------------------------------------------------------
   group('TarjetaProtagonista', () {
     // PRUEBA 6: comprueba el aspecto. La tarjeta activa de Jason debe tener
-    // el borde cyan (su color de acento), no el magenta de Lucía. Esto
+    // el borde cyan, no el magenta de Lucía. Esto
     // evita un fallo que ya nos pasó al montarlo: el borde salía siempre
     // magenta.
-    testWidgets('la tarjeta activa usa el color de acento en el borde',
+    testWidgets('la tarjeta activa usa el color correcto de personaje en el borde',
         (tester) async {
       await tester.pumpWidget(_envolver(
         const TarjetaProtagonista(protagonista: _jason, activa: true),

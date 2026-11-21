@@ -16,7 +16,7 @@ class TarjetaProtagonista extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final acento = protagonista.colorAcento;
+    final colorPersonaje = protagonista.colorPersonaje;
 
     return GestureDetector(
       onTap: onTap,
@@ -27,7 +27,7 @@ class TarjetaProtagonista extends StatelessWidget {
           color: ColoresGta.surfaceCard,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: activa ? acento : ColoresGta.borde,
+            color: activa ? colorPersonaje : ColoresGta.borde,
             width: activa ? 2 : 1,
           ),
         ),
@@ -43,13 +43,13 @@ class TarjetaProtagonista extends StatelessWidget {
                   height: 40,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: acento.withAlpha(51),
-                    border: Border.all(color: acento, width: 1),
+                    color: colorPersonaje.withAlpha(51),
+                    border: Border.all(color: colorPersonaje, width: 1),
                   ),
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      Icon(protagonista.icono, color: acento, size: 22),
+                      Icon(protagonista.icono, color: colorPersonaje, size: 22),
                       if (protagonista.iconoInterior != null)
                         Icon(
                           protagonista.iconoInterior,
@@ -64,14 +64,14 @@ class TarjetaProtagonista extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Color.alphaBlend(acento.withAlpha(12), ColoresGta.primary),
+                      color: Color.alphaBlend(colorPersonaje.withAlpha(12), ColoresGta.primary),
                       borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: acento),
+                      border: Border.all(color: colorPersonaje),
                     ),
                     child: Text(
                       protagonista.etiquetaActiva,
                       style: TextStyle(
-                        color: acento,
+                        color: colorPersonaje,
                         fontSize: 13,
                         fontWeight: FontWeight.w900,
                         letterSpacing: 0.5,

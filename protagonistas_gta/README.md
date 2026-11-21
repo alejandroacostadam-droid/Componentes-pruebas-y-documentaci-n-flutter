@@ -172,7 +172,7 @@ const nuevo = Protagonista(
   nombre: 'Nuevo',             // lo que se ve en la tarjeta
   rol: 'Personaje secundario', // el texto pequeño bajo el nombre
   icono: Icons.star,           // el icono del círculo
-  colorAcento: Colors.amber,   // el color cuando está activo
+  colorPersonaje: Colors.amber,   // el color cuando está activo
 );
 ```
 
@@ -218,7 +218,7 @@ Los datos de un personaje.
 | `nombre` | El nombre que se ve | Sí |
 | `rol` | El texto pequeño bajo el nombre | Sí |
 | `icono` | El icono principal del círculo | Sí |
-| `colorAcento` | El color del icono, del borde y de la etiqueta cuando está activo | Sí |
+| `colorPersonaje` | El color del icono, del borde y de la etiqueta cuando está activo | Sí |
 | `iconoInterior` | Un icono pequeño dentro del principal | No |
 | `etiquetaActiva` | El texto de la etiqueta activa. Por defecto: `ACTIVA` | No |
 
