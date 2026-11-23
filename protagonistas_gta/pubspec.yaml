@@ -6,7 +6,7 @@ publish_to: none
 repository: https://github.com/alejandroacostadam-droid/Componentes-pruebas-y-documentaci-n-flutter
 
 environment:
-  sdk: ^3.13.7
+  sdk: ">=3.13.4 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

@@ -1,0 +1,25 @@
+name: gta_vi_fan_companion
+description: App Flutter que integra tres componentes visuales de GTA VI.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  protagonistas_gta:
+    path: ../protagonistas_gta
+  gta_selector_card:
+    path: ../gta_selector_card/gta_selector_card
+  control_luna:
+    path: ../control_luna
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

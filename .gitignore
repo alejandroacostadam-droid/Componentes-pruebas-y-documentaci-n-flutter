@@ -1,0 +1,9 @@
+**/.dart_tool/
+**/build/
+**/.flutter-plugins-dependencies
+**/.packages
+**/android/local.properties
+**/ios/Flutter/Generated.xcconfig
+/protagonistas_gta/pubspec.lock
+/control_luna/pubspec.lock
+/gta_selector_card/gta_selector_card/pubspec.lock
