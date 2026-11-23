@@ -1,0 +1,15 @@
+name: gta_selector_card
+description: Tarjeta con tu entrega favorita de GTA
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
